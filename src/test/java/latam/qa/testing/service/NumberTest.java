@@ -22,14 +22,16 @@ public class NumberTest {
     }
     @Test
     public void verificar_divisorEsCero_Falla(){
-        Number n = new Number();
-        int result = n.divideYentregaEntero(5,0);
-        assertEquals(0, result);
+        try{
+            Number n = new Number();
+            int result = n.divideDosEnteros(1,0);
+        }
+        catch(Exception e){
+
+        }
+        finally{
+
+        }
+       
     }
-    @Test
-    public void verificar_DivisionDeDosNumerosEsCorrecto(){
-        Number n = new Number();
-        int result = n.divideYentregaEntero(10,2);
-        assertEquals(10/2, result);
-    } 
 }
