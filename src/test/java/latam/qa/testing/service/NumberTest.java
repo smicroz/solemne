@@ -17,7 +17,7 @@ public class NumberTest {
     public void creatingString_twoSimpleNumbers_mustFail(){
         Number n = new Number();
         String result = n.stringCalc(1, 2);
-        assertEquals(String.format("%d,%d", 1, 5), result);
+        assertNotSame(String.format("%d,%d", 1, 5), result);
 
     }
 }
