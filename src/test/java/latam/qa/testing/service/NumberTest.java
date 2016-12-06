@@ -20,4 +20,18 @@ public class NumberTest {
         assertNotSame(String.format("%d,%d", 1, 5), result);
 
     }
+    @Test
+    public void verificar_divisorEsCero_Falla(){
+        try{
+            Number n = new Number();
+            int result = n.divideDosEnteros(1,0);
+        }
+        catch(Exception e){
+
+        }
+        finally{
+
+        }
+       
+    }
 }
