@@ -27,11 +27,10 @@ public class NumberTest {
             int result = n.divideDosEnteros(1,0);
         }
         catch(Exception e){
-
+            assertThat(e)
+                .isInstanceOf(IllegalArgumentException.class);
         }
-        finally{
-
-        }
-       
+        
+      
     }
 }
